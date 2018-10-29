@@ -1,0 +1,19 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="jumbotron" style="background-color:pink">
+        <h2>Gender Classifier App</h2>
+        <p>Using ML</p>
+    </div>
+</div>
+
+<div class="container">
+    {% if prediction == 0 %}
+    <p>Female</p>
+    {% elif prediction == 1 %}
+    <p>Male</p>
+    {% endif %}
+</div>
+
+{% endblock %}
